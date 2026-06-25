@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ayx · 主题叙述</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f5f4f1;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #1e1e1e;
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 1.5rem 5rem;
+            min-height: 100vh;
+        }
+
+        .page {
+            max-width: 680px;
+            width: 100%;
+        }
+
+        /* 开场——极简短句 */
+        .opening {
+            font-size: 1.5rem;
+            font-weight: 350;
+            letter-spacing: -0.02em;
+            color: #2a2a2a;
+            border-left: 3px solid #b7a898;
+            padding-left: 1.2rem;
+            margin: 2rem 0 2.5rem 0;
+            line-height: 1.4;
+        }
+
+        .opening em {
+            font-style: normal;
+            background: #e7e2da;
+            padding: 0.1rem 0.3rem;
+        }
+
+        /* 承接段落 */
+        .context {
+            font-size: 1rem;
+            color: #3b3b3b;
+            margin-bottom: 2.8rem;
+            text-align: left;
+            font-weight: 350;
+            max-width: 100%;
+        }
+
+        .context p {
+            margin-bottom: 1.4rem;
+        }
+
+        .context a {
+            color: #2c2c2c;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #b7a898;
+            transition: color 0.2s;
+        }
+
+        .context a:hover {
+            color: #7f6b58;
+        }
+
+        /* 特点列表——卡片式 */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.8rem;
+            margin: 3rem 0 3.5rem;
+        }
+
+        .feature-item {
+            background: #ffffff;
+            padding: 1.5rem 1.2rem;
+            border-radius: 2px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+            border: 1px solid #e7e2da;
+            transition: box-shadow 0.15s, border-color 0.15s;
+        }
+
+        .feature-item:hover {
+            border-color: #c4b8a8;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.03);
+        }
+
+        .feature-item h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            color: #1e1e1e;
+            margin-bottom: 0.4rem;
+        }
+
+        .feature-item .sub {
+            font-size: 0.9rem;
+            color: #5f5f5f;
+            font-weight: 350;
+            line-height: 1.5;
+        }
+
+        /* 温和结尾 */
+        .closing {
+            margin-top: 2.8rem;
+            padding-top: 2rem;
+            border-top: 1px solid #dbd4cb;
+            font-size: 0.975rem;
+            color: #484848;
+            font-weight: 350;
+            text-align: left;
+            letter-spacing: 0.01em;
+            line-height: 1.7;
+        }
+
+        .closing a {
+            color: #1e1e1e;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #b7a898;
+        }
+
+        .closing a:hover {
+            color: #7f6b58;
+        }
+
+        /* 辅助小字 */
+        .footnote {
+            font-size: 0.8rem;
+            color: #9a9188;
+            margin-top: 3.5rem;
+            text-align: center;
+            letter-spacing: 0.02em;
+        }
+
+        /* 响应式 */
+        @media (max-width: 540px) {
+            body {
+                padding: 2rem 1.2rem 4rem;
+            }
+            .opening {
+                font-size: 1.3rem;
+                padding-left: 0.9rem;
+                margin: 1.2rem 0 2rem;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+            .feature-item {
+                padding: 1.2rem 1rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .opening {
+                font-size: 1.75rem;
+                padding-left: 1.6rem;
+                margin: 2.5rem 0 3rem;
+            }
+            .context {
+                font-size: 1.05rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+
+        <!-- 开场短句 -->
+        <div class="opening">
+            一篇叙述，从<em>ayx</em>所锚定的内容坐标开始。
+        </div>
+
+        <!-- 承接段落：切入主题内容 -->
+        <div class="context">
+            <p>
+                在信息密集的行业环境里，平台的价值不在于罗列功能，而在于它能否成为持续交付判断力的支点。<a href="https://staff-ayx.com.cn">ayx</a> 所呈现的并非单点工具，而是一套围绕数据、流程与角色关系展开的工作框架。它试图在复杂协作中建立一种可被追溯的秩序——让每一次操作都留有上下文。
+            </p>
+            <p>
+                如果拆解这个命题，会看到几个相互咬合的结构层：权限边界如何定义信息流动，表单如何承载决策轨迹，通知如何在恰当的时刻介入而不造成干扰。每个细节都指向同一个目的：减少熵增，让专注力更持久。
+            </p>
+        </div>
+
+        <!-- 特点列表（四个方向） -->
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h3>角色与边界</h3>
+                <div class="sub">支持多级权限映射，将访问范围控制在职责以内，避免无关信息稀释注意力。</div>
+            </div>
+            <div class="feature-item">
+                <h3>可追溯的操作</h3>
+                <div class="sub">每一步变动附带时间戳与操作者标识，形成可回查的审计线索，降低沟通成本。</div>
+            </div>
+            <div class="feature-item">
+                <h3>轻量通知线</h3>
+                <div class="sub">根据事件优先级触发提示，非必要不打断，保留工作流的连续性。</div>
+            </div>
+            <div class="feature-item">
+                <h3>结构化的表单</h3>
+                <div class="sub">字段与流程绑定，减少重复录入。数据在提交的同时即成为可引用的记录。</div>
+            </div>
+        </div>
+
+        <!-- 温和结尾 + 自然链接 -->
+        <div class="closing">
+            并非所有系统都需要喧哗的仪表盘。一个足够克制的后台，往往意味着更多的时间被留给了判断本身。如果你恰好正在梳理类似的工作范式，或许值得看一看 <a href="https://staff-ayx.com.cn">ayx</a> 所采用的结构思路——它不一定适合所有场景，但它提供了一种值得参考的简洁性。
+        </div>
+
+        <div class="footnote">
+            · 叙述基于公开信息与常规产品逻辑 ·
+        </div>
+
+    </div>
+</body>
+</html>
